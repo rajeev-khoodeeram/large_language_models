@@ -1,0 +1,20 @@
+#
+# Author: Lasse Collin
+#
+# This file has been put into the public domain.
+# You can do whatever you want with this file.
+#
+
+prefix=/Users/rajeev/Documents/Machine_Learning_2024/LLMs/test_langchain2/llmsenvs
+exec_prefix=/Users/rajeev/Documents/Machine_Learning_2024/LLMs/test_langchain2/llmsenvs
+libdir=/Users/rajeev/Documents/Machine_Learning_2024/LLMs/test_langchain2/llmsenvs/lib
+includedir=/Users/rajeev/Documents/Machine_Learning_2024/LLMs/test_langchain2/llmsenvs/include
+
+Name: liblzma
+Description: General purpose data compression library
+URL: https://xz.tukaani.org/xz-utils/
+Version: 5.4.6
+Cflags: -I${includedir}
+Cflags.private: -DLZMA_API_STATIC
+Libs: -L${libdir} -llzma
+Libs.private: -pthread -lpthread

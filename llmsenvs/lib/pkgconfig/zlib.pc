@@ -1,0 +1,13 @@
+prefix=/Users/rajeev/Documents/Machine_Learning_2024/LLMs/test_langchain2/llmsenvs
+exec_prefix=/Users/rajeev/Documents/Machine_Learning_2024/LLMs/test_langchain2/llmsenvs
+libdir=/Users/rajeev/Documents/Machine_Learning_2024/LLMs/test_langchain2/llmsenvs/lib
+sharedlibdir=/Users/rajeev/Documents/Machine_Learning_2024/LLMs/test_langchain2/llmsenvs/lib
+includedir=/Users/rajeev/Documents/Machine_Learning_2024/LLMs/test_langchain2/llmsenvs/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

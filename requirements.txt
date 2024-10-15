@@ -1,0 +1,4 @@
+# list of apis which will be required 
+openai
+langchain
+streamlit  
