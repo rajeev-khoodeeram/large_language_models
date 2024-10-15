@@ -43,8 +43,6 @@ mythird_prompt  =  PromptTemplate(
     )
 chain3  = LLMChain(llm=llm, prompt =  mythird_prompt, verbose =  True, output_key="description")
 
-
-
 # mainChain = SimpleSequentialChain(chains=[chain1, chain2], verbose=True)
 mainChain = SequentialChain(chains=[chain1, chain2, chain3], input_variables=['name'], 
                             output_variables=['person','dob', 'description'], verbose=True)

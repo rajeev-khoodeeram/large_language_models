@@ -66,4 +66,3 @@ if input_text:
 
     with st.expander('Major events'):
         st.info(desc_memory.buffer)
-    

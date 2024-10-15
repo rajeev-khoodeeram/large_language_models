@@ -15,8 +15,6 @@ myfirst_prompt  =  PromptTemplate(
     template="What is the definition of {name}?" 
     )
 
-
-
 ## initialise your openai
 llm = OpenAI()
 llm = LLMChain(llm=llm, prompt =  myfirst_prompt, verbose =  True)
